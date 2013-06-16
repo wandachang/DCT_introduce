@@ -1,0 +1,204 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--jquery-->
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link href="css/jquery-ui.css" rel="stylesheet">
+        <!--css-->
+        <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/animate-custom.css" rel="stylesheet"	>
+        <!--js-->
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+		
+		<link rel="stylesheet" type="text/css" media="all" href="960_min/reset.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="960_min/text.css" />
+		<link rel="stylesheet" type="text/css" media="all" href="960_min/960.css" />
+        <style>
+            p{
+                text-align: center;
+            }
+			h1{
+				text-align: center;
+			}
+			#target{
+				margin-top: 10px;
+				width: auto;
+				height: 300px;
+			}
+			#position{
+				margin-top: 10px;
+				width: auto;
+				height: 300px;
+			}
+			#resource{
+				margin-top: 10px;
+				width: auto;
+				height: 300px;
+			}
+			#future{
+				margin-top: 10px;
+				width: auto;
+				height: 300px;
+			}
+			#committee{
+				margin-top: 10px;
+				width: auto;
+				height: 300px;
+			}
+
+			.animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:1s;-moz-animation-duration:1s;-ms-animation-duration:1s;-o-animation-duration:1s;animation-duration:1s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}@-webkit-keyframes flash {
+				0%, 50%, 100% {opacity: 1;}	25%, 75% {opacity: 0;}
+			}			
+						@-webkit-keyframes flipInY {
+				0% {
+					-webkit-transform: perspective(400px) rotateY(90deg);
+					opacity: 0;
+				}
+				
+				40% {
+					-webkit-transform: perspective(400px) rotateY(-10deg);
+				}
+				
+				70% {
+					-webkit-transform: perspective(400px) rotateY(10deg);
+				}
+				
+				100% {
+					-webkit-transform: perspective(400px) rotateY(0deg);
+					opacity: 1;
+				}
+			}
+			@-moz-keyframes flipInY {
+				0% {
+					-moz-transform: perspective(400px) rotateY(90deg);
+					opacity: 0;
+				}
+				
+				40% {
+					-moz-transform: perspective(400px) rotateY(-10deg);
+				}
+				
+				70% {
+					-moz-transform: perspective(400px) rotateY(10deg);
+				}
+				
+				100% {
+					-moz-transform: perspective(400px) rotateY(0deg);
+					opacity: 1;
+				}
+			}
+			@-o-keyframes flipInY {
+				0% {
+					-o-transform: perspective(400px) rotateY(90deg);
+					opacity: 0;
+				}
+				
+				40% {
+					-o-transform: perspective(400px) rotateY(-10deg);
+				}
+				
+				70% {
+					-o-transform: perspective(400px) rotateY(10deg);
+				}
+				
+				100% {
+					-o-transform: perspective(400px) rotateY(0deg);
+					opacity: 1;
+				}
+			}
+			@keyframes flipInY {
+				0% {
+					transform: perspective(400px) rotateY(90deg);
+					opacity: 0;
+				}
+				
+				40% {
+					transform: perspective(400px) rotateY(-10deg);
+				}
+				
+				70% {
+					transform: perspective(400px) rotateY(10deg);
+				}
+				
+				100% {
+					transform: perspective(400px) rotateY(0deg);
+					opacity: 1;
+				}
+			}
+
+			.flipInY{
+				<!-- -webkit-backface-visibility: visible !important;
+				-webkit-animation-name: flipInY;
+				-moz-backface-visibility: visible !important;
+				-moz-animation-name: flipInY;
+				-o-backface-visibility: visible !important;
+				-o-animation-name: flipInY; -->
+				backface-visibility: visible !important;
+				animation-name: flipInY;
+			}
+        </style>
+    </head>
+    <body>
+        <div class="container_12">
+            
+                <div class="grid_3 alpha">
+                    <div id="target" onclick="flipTarget()" class="well" style="height: 100px;">
+                        <h1  style="line-height: 100px;">對象</h1>
+                    </div>
+                    <div>
+                        <img src="image/image1.jpg">
+                    </div>
+                    <div id="position" onclick="flipPosition()" class="well" style="height: 50px;">
+                        <h1 style="line-height: 50px;">定位</h1>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <div>
+                        <img src="#">
+                    </div>
+                    <div id="resource" onclick="flipInY()" class="well animated flipInY">
+                        <h1>資源整合</h1>
+                    </div>
+                </div>
+                <div class="grid_3">
+                    <div id="future" onclick="flipInY()" class="well">
+                        <h1>未來發展</h1>
+                    </div>
+                    <div>
+                        <img src="#">
+                    </div>
+                </div>
+                <div class="grid_3 omega">
+                    <div>
+                        <img src="#">
+                    </div>
+                    <div id="committee" onclick="flipInY()" class="well">
+                        <h1>諮詢委員</h1>
+                    </div>
+                </div>        
+        </div>
+    </body>
+	<script>
+		function flipTarget(){
+			$('#target').addClass('animated flipInY');
+			$('#target').empty();
+			$('#target').append("<p>以雙主修方式提供全校同學學習以數位內容與科技為主的第二專長，培養具有人文內涵、資訊設計、及科技實作能力的跨領域人才。<p>");
+		}
+		function flipPosition(){
+			$('#position').addClass('animated flipInY');
+			$('#position').empty();
+			$('#position').append("<p  style='line-height: 50px;'>本校符合雙主修申請之同學<p>");
+		}
+	</script>
+</html>

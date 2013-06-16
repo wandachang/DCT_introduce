@@ -1,0 +1,163 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="yoxview-init.js"></script>
+    <script type="text/javascript">
+    $(function(){
+  	$("#yoxview").yoxview({
+    backgroundColor: 'Blue',
+    playDelay: 5000
+  });
+});
+    </script>
+        <!--jquery-->
+
+        <!--bootstrap-->
+        <!-- <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> -->
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--other-->
+        <!-- <link href="css/animate-custom.css" rel="stylesheet"> -->
+    <link href="css/nav_css.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="960_min/reset.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="960_min/text.css" />
+    <link rel="stylesheet" type="text/css" media="all" href="960_min/960.css" />
+    <script>
+        $(function() {
+            var icons = {
+                header: "ui-icon-circle-arrow-e",
+                activeHeader: "ui-icon-circle-arrow-s"
+            };
+        $("#accordion").accordion({
+            icons: icons,
+            collapsible: true,
+            heightStyle: "content"
+            });
+        });
+   
+       $(function() {
+                $("#menu").menu();
+            });
+        </script>
+
+        <style>
+            .thumbnails a
+            {
+                opacity: 0.8;
+                filter: alpha(opacity=80);
+                display: block;
+                margin: 5px;
+                float: left;
+                position: relative;
+                
+            }
+            .thumbnails a:hover{ opacity: 1; filter: alpha(opacity=100); text-decoration: none }
+            .thumbnails a:hover img{ border-color: #3f3f3f; }
+            .thumbnails a span
+            {
+                display: block;
+                position: absolute;
+                bottom: 0;
+                height: 20px;
+                line-height: 20px;
+                color: White;
+                left: 0;
+                background: rgba(0,0,0,0.5);
+                width: 100%;
+                text-align: center;
+                font-size: 10pt;
+                }
+            #yoxview{
+                z-index: 0;
+                border:none;
+            header{
+                margin: 10px;
+            }            
+            image{
+                height: 80%;
+            }
+            .event-header{
+                float: right;
+            }
+            #menu_side{
+                position: fixed;
+                top: 200px;
+                left: 0px;
+                width: 100px;
+            }
+            ul{
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div id="header" class="container">
+            <div class="row">
+                <div class="span12">                   
+                    <a href="index.html"><img src="image/header.jpg" alt="" /></a>
+                </div>
+            </div>
+            <div class="row-fluid">
+                <div id="nav-bar" class="span12">
+                    <nav class="main-nav" id="main-nav">
+                        <a href="http://contemplator.github.io/DCT_introduce/index.html" class="home link">
+                            <span class="icon-home" aria-hidden="true"></span>首頁
+                        </a>
+                        <a href="http://contemplator.github.io/DCT_introduce/introduce.html" class="forums link">
+                            <span class="icon-star" aria-hidden="true"></span>認識學程
+                        </a>
+                        <a href="http://contemplator.github.io/DCT_introduce/member_teacher.html" class="snippets link">
+                            <span class="icon-user" aria-hidden="true"></span>成員
+                        </a>
+                        <a href="http://contemplator.github.io/DCT_introduce/course.html" class="gallery link">
+                            <span class="icon-book" aria-hidden="true"></span>課程
+                        </a>
+                        <a href="http://contemplator.github.io/DCT_introduce/recruit.html" class="videos link">
+                            <span class="icon-th-list" aria-hidden="true"></span>招生訊息
+                        </a>
+                        <a href="http://contemplator.github.io/DCT_introduce/activities.html" class="demos link">
+                            <span class="icon-camera" aria-hidden="true"></span>活動照片
+                        </a>
+                        <a href="http://contemplator.github.io/DCT_introduce/masterpiece.html" class="lodge link">
+                            <span class="icon-picture" aria-hidden="true"></span>學生作品
+                        </a>
+                        <a href="http://contemplator.github.io/DCT_introduce/faq_apply.html" class="lodge link">
+                            <span class="icon-question-sign" aria-hidden="true"></span>常見問題
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>  
+        <br>
+</div>
+<div id="content" class="container_12">
+    <div class="grid_12">          
+        <div id="yoxview" class="thumbnails grid_12">
+            <a href="http://www.youtube.com/watch?v=FbqBv7Tz1QY"><img src="workimg/headache.jpg" alt="Jay" title="公公偏頭痛" /></a>
+            <a href="http://www.youtube.com/watch?v=jOxzAsnx9-0"><img src="workimg/rainallnight.jpg" alt="Jay" title="all night raining" /></a>
+            <a href="http://www.youtube.com/watch?v=4j0Fgmsxr-o"><img src="workimg/superman.jpg" alt="Jay" title="superman can't fly" /></a>
+            <a href="http://www.youtube.com/watch?v=MKNrnSsIwf8"><img src="workimg/BackToPast.jpg" alt="Jay" title="Back to Past" /></a>
+            <a href="http://www.youtube.com/watch?v=Fojxa8jVM9E"><img src="workimg/SunnyDay.jpg" alt="Jay" title="SunnyDay" /></a>
+            <a href="http://www.youtube.com/watch?v=miBGaUagOz8"><img src="workimg/NoMatterLoveYou.jpg" alt="Jay" title="No Matter what I Love You So Much" /></a>
+            <a href="http://www.youtube.com/watch?v=Fojxa8jVM9E"><img src="workimg/SunnyDay.jpg" alt="Jay" title="SunnyDay" /></a>
+            <a href="http://www.youtube.com/watch?v=15zk9nO0Kyk"><img src="workimg/YouCanHeard.jpg" alt="Jay" title="You Can Heard" /></a>
+            <a href="workimg/ovo.jpg"><img src="workimg/HardToTell.jpg" alt="Jay" title="Hard To Tell" /></a>
+            <!--<a href="workimg/1.jpg"><img src="workimg/1.jpg" alt="First" title="First image" /></a>
+            <a href="workimg/2.jpg"><img src="workimg/2.jpg" alt="Second" title="Second image" /></a>
+            <a href="workimg/media/3.flv"><img src="workimg/3.jpg" alt="Second" title="Second image" /></a>
+            <a href="workimg/4.jpg"><img src="workimg/4.jpg" alt="Second" title="Second image" /></a>
+            <a href="workimg/5.jpg"><img src="workimg/5.jpg" alt="Second" title="Second image" /></a>-->
+        </div>
+    </div>
+</div>            
+</body>
+</html>

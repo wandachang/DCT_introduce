@@ -1,0 +1,190 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!--jquery-->
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link href="css/jquery-ui.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <!-- <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--other-->
+        <!-- <link href="css/animate-custom.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/960.css" />
+        <link href="css/nav_css.css" rel="stylesheet">
+
+        <style>
+            body{
+                font-family: '微軟正黑體';
+                background-image: url("image/wavegrid.png");
+            }
+            header{
+                margin: 10px;
+                           }
+            p{
+                text-align: center;
+            }
+            table{
+                border-radius:10px;
+                background-color: white;
+                border-radius:10px;
+            }
+            #coursetable{
+                background:url("image/emozionale_bg.png") no-repeat center bottom;
+                margin-bottom:20px; 
+                border-radius:0; 
+                padding: 0; 
+                position:relative; 
+            }
+            #menu_side{
+                position: fixed;
+                top: 230px;
+                left: 10px;
+                width: auto;
+            }
+
+            #coursetable h3{
+                padding: 10px;
+                border-bottom: 1px dotted; 
+                border-left:  1px dotted;
+            }
+            #coursetable h4{
+                font-size: 17px;
+            }           
+        </style>
+        <script>
+            $(function() {
+                $("#menu").menu();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container_12">
+            <div id="header">
+                <div class="grid_12">
+                    <a href="index.html"><img src="image/header.jpg" alt="" /></a>
+                </div>
+
+                <div id="nav-bar" class="grid_12">
+                    <nav class="main-nav" id="main-nav">
+
+                        <a href="index.html" class="home link">
+                            <span class="icon-home" aria-hidden="true"></span>首頁
+                        </a>
+                        <a href="introduce.html" class="forums link">
+                            <span class="icon-star" aria-hidden="true"></span>認識學程
+                        </a>
+                        <a href="member_teacher.html" class="snippets link">
+                            <span class="icon-user" aria-hidden="true"></span>成員
+                        </a>
+                        <a href="course.html" class="gallery link">
+                            <span class="icon-book" aria-hidden="true"></span>課程
+                        </a>
+                        <a href="recruit.html" class="videos link">
+                            <span class="icon-th-list" aria-hidden="true"></span>招生訊息
+                        </a>
+                        <a href="activities.html" class="demos link">
+                            <span class="icon-camera" aria-hidden="true"></span>活動照片
+                        </a>
+                        <a href="masterpiece/masterpiece.html" class="lodge link">
+                            <span class="icon-picture" aria-hidden="true"></span>學生作品
+                        </a>
+                        <a href="faq_apply.html" class="lodge link">
+                            <span class="icon-question-sign" aria-hidden="true"></span>常見問題
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="grid_12" id="coursetable">
+                    <h3>核心必修</h3>
+                    <h4>共19學分</h4>
+                    <br>
+                    <table>
+                        <tr>
+                            <th style="width: 200px;">課名</th>
+                            <th style="width: 100px;">學分數</th>
+                            <th style="width: 100px;">開課年級</th>
+                            <th style="width: 600px;">課程說明</th>
+                        </tr>
+                        <tr>
+                            <td><p>美學概論</p></td>
+                            <td><p>3</p></td>
+                            <td><p>二上</p></td>
+                            <td><p>涵蓋文字、聲音、影像、錄像、動畫等之數位內容產生及典藏的技術及課題。包括類比到數位內容建置方法及處理數位影音所需技術、建立數位內容儲存、管理以及傳播之技術、資產保存管理版權技術，及未來進行整合數位內容之能力。</p>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td><p>數位內容與科技導論</p></td>
+                            <td><p>3</p></td>
+                            <td><p>二上</p></td>
+                            <td><p>從美感問題及美感語言之定義入手，繼而檢視藝術家、藝術作品及觀眾的關係，並在此過程中引出三種在哲學上互為爭勝的重要美學理論：參與美學、美感經驗論及美感機制論。透過這種介紹方式，作者希望能激發讀者對美學有多元的理解。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>程式設計基礎</p></td>
+                            <td><p>3</p></td>
+                            <td><p>二上</p></td>
+                            <td><p>透過學習一特定的程式語言來建立初學者關於程式設計應有的基本觀念，包括變數、運算式、敘述、迴圈與副程式等。除了觀念講授外，也著重以實際演練來培養程式設計的基本技巧。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>文化脈絡與故事原型</p></td>
+                            <td><p>3</p></td>
+                            <td><p>二下</p></td>
+                            <td><p>透過經典故事賞析，探討好故事元素的構成元素—主題、人物、情節、美術、設計、語言與聲音。課程將透過經典童話、歐洲民間故事、希臘神話、希臘戲劇故事、莎士比亞戲劇及聖經故事等剖析文化脈絡與故事原型。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>設計思維</p></td>
+                            <td><p>3</p></td>
+                            <td><p>二下</p></td>
+                            <td><p>透過視覺的原理與視覺心理學及認知科學，導向設計思考的思維，介紹不同媒材的呈現表達方式與技術，透過課程練習設計的構想發展，視覺理論與設計理論知識；設計想像草圖操作至實作練習設計主題的操作，進而達成數位內容設計與互動設計所需的基礎。並結合畫圖、設計、電腦繪圖與創作，表達資訊傳播社會科技與設計的轉化。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>專案實作 I</p></td>
+                            <td><p>2</p></td>
+                            <td><p>三下</p></td>
+                            <td><p>本課程是專題實作一學年的第一學期課程。將透過實作與個別指導，讓學生針對有興趣的數位內容主題，利用所學到的知識與技能，發揮創意，在內容與技術上設計與完成具深度的實作。學程亦可能協助該主題尋求建教合作機會。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>專案實作 II / A</p></td>
+                            <td><p>2</p></td>
+                            <td><p>四上</p></td>
+                            <td><p>本課程是專題實作一學年的第二學期課程。將透過實作與個別指導，讓學生針對有興趣的數位內容主題，利用所學到的知識與技能，發揮創意，在內容與技術上設計與完成具深度的實作。學程亦可能協助該主題尋求建教合作機會。</p></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            
+            <div id="menu_side">
+                <ul id="menu">
+                    <li><a href="course.html">核心必修</a></li>
+                    <li><a href="course_2.html">基礎群修-內容與設計</a></li>
+                    <li><a href="course_3.html">基礎群選-科技</a></li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <div class="grid_12">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

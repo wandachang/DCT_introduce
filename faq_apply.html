@@ -1,0 +1,145 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!--jquery-->
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link href="css/jquery-ui.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <!-- <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--other-->
+        <!-- <link href="css/animate-custom.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/960.css" />
+        <link href="css/nav_css.css" rel="stylesheet">
+
+        <style>
+            body{
+                font-family: '微軟正黑體';
+                background-image: url("image/wavegrid.png");
+            }
+            #menu_side{
+                position: fixed;
+                top: 200px;
+                left: 0px;
+                width: 100px;
+            }
+            ul{
+                width: 100px;
+            }
+        </style>
+
+        <script>
+            $(function() {
+                var icons = {
+                    header: "ui-icon-circle-arrow-e",
+                    activeHeader: "ui-icon-circle-arrow-s"
+                };
+                $("#accordion").accordion({
+                    icons: icons,
+                    collapsible: true,
+                    heightStyle: "content"
+                });
+            });
+            $(function() {
+                $("#menu").menu();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container_12">
+            <div id="header">
+                <div class="grid_12">
+                    <a href="index.html"><img src="image/header.jpg" alt="" /></a>
+                </div>
+                <div id="nav-bar" class="grid_12">
+                    <nav class="main-nav" id="main-nav">
+                        <a href="index.html" class="home link">
+                            <span class="icon-home" aria-hidden="true"></span>首頁
+                        </a>
+                        <a href="introduce.html" class="forums link">
+                            <span class="icon-star" aria-hidden="true"></span>認識學程
+                        </a>
+                        <a href="member_teacher.html" class="snippets link">
+                            <span class="icon-user" aria-hidden="true"></span>成員
+                        </a>
+                        <a href="course.html" class="gallery link">
+                            <span class="icon-book" aria-hidden="true"></span>課程
+                        </a>
+                        <a href="recruit.html" class="videos link">
+                            <span class="icon-th-list" aria-hidden="true"></span>招生訊息
+                        </a>
+                        <a href="activities.html" class="demos link">
+                            <span class="icon-camera" aria-hidden="true"></span>活動照片
+                        </a>
+                        <a href="masterpiece/masterpiece.html" class="lodge link">
+                            <span class="icon-picture" aria-hidden="true"></span>學生作品
+                        </a>
+                        <a href="faq_apply.html" class="lodge link">
+                            <span class="icon-question-sign" aria-hidden="true"></span>常見問題
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            
+            <div id="content">
+                <div class="grid_12">
+                    <div id="accordion">
+                        <h3>學程的申請表要在那裡下載?</h3>
+                        <div>
+                            <p>請同學在學士學程網站的[招生訊息]中點選[學程申請表下載]，就可下載學程申請表的word檔。</p>
+                        </div>
+                        <h3>申請時所需提供之歷年成績，所占甄選評分的比重有多少?	</h3>
+                        <div>
+                            <p>申請學程時，雖然需要同學提供大學歷年成績與排名，但歷年成績與排名並不是甄選評分的唯一考量，只是評選時所參考的面向之一。例如有的同學雖然在原本科系的專業科目成績不突出，但具有數位內容跨領域的特質，我們也會很歡迎具備類似特質的同學。又如同學若曾修習與數位內容相關的課程且表現不錯，也會有加分效果。至於歷年成績所佔的評分比重，考量到每位同學的多元特質與獨特性，學程並沒有硬性規範課業成績所佔的評分比重，是由評選委員根據申請同學的特質綜合考量。</p>
+                        </div>
+                        <h3>申請時所需提供之有利資料可以再具體說明嗎?</h3>
+                        <div>
+                            <p>除了學程申請表所要求提供之「申請動機」、「未來發展發方向」、「課外活動表現」（例如參加研習營、志工、社團經驗等）、「資訊軟硬體、資訊相關課程的經驗」，還可以提供「作品」。這些資料都請同學儘量以書面方式繳交。若所提供之資料龐大，可以選擇具備代表性的幾項或幾張作品加以說明，展現同學的獨特性。</p>
+                        </div>
+                        <h3>若在申請結束後到公告放榜前的期間，沒有收到口試通知，是否表示沒有錄取?</h3>
+                        <div>
+                            <p>同學請勿擔心☺ 之所以會另行通知口試，是因為有些同學所提供的書面資料，書審委員覺得有需要進一步面談多加了解同學，以有助於綜合評選的考量。所以，沒有被通知前來口試的同學，也很有可能是逕行錄取喔。</p>
+                        </div>
+                        <h3>如果我現在是二年級(或三年級)的同學，即將升大三(或大四)，如果現在才申請學程，是否無法如期於大四修畢本學程 ? </h3>
+                        <div>
+                            <p>同學是否如期修畢學程，主要關鍵在於學程規定的學分數與學程開課的時段。根據學程施行要點，同學如果修滿43學分，就可取得學程學位。43個學分中，有6個學分的進階專業課程，可以以同學原本的專業系所的學分來認定。此外，43個學分中，還有3學分可以抵免。因此，有可能同學修讀學程開授的課程34學分就可取得學位。 學程的開課都會儘量安排在星期一到星期五的EFG(18:30~21:30)與星期五的下午14:00~17:00，以方便同學修讀。而核心必修課也都會儘量避免與同學原本主修科系的必修課衝堂。此外，因應第一屆學長姐的建議，學程有些基礎群選課也會安排在星期一至星期五的下午16:00~18:00。 </p>
+                        </div>
+                        <h3>可否先修學程的課，等甄選通過後便可以少修些學分? </h3>
+                        <p>同學在甄選進入學程之前，先修讀學程所開設的課程(課程科目代號前三碼為781之科目)，甄選進入學程之後，同學不需經過抵免申請，這些學分都自動列計，且沒有上限。只是學程所開設的課程，主要是以學程的同學為主，有些課程僅開放給學程的同學修讀。有些課程除非有餘額，否則優先給學程同學修讀。</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu_side">
+                <ul id="menu">
+                    <li><a href="faq_apply.html">申請相關</a></li>
+                    <li><a href="faq_course.html">課程相關</a></li>
+                    <li><a href="faq_other.html">其他</a></li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <div class="grid_12">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

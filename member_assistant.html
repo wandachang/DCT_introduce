@@ -1,0 +1,208 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!--jquery-->
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link href="css/jquery-ui.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <!-- <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--other-->
+        <!-- <link href="css/animate-custom.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/960.css" />
+        <link href="css/nav_css.css" rel="stylesheet">
+
+        <style>
+            body{
+                font-family: '微軟正黑體';
+                background-image: url("image/wavegrid.png");
+            }
+            #content{
+                background-color: white;
+            }            
+            #menu_side{
+                position: fixed;
+                top: 200px;
+                left: 0px;
+                width: 100px;
+            }
+            ul{
+                width: 100px;
+            }
+            .outside{
+                background-color: white;
+                margin: 10px;
+            }
+            .photo{
+                margin-left: 15px;
+            }
+            .content{
+                color: #606060;
+            }
+            p{
+                margin-left: 15px;
+            }
+            .content:hover{
+                background-color:#C0C0C0;
+                color:#FFFFFF;
+                -o-transition: color .10s linear;
+                -webkit-transition: color .10s linear;
+                -moz-transition: color .10s linear;
+                transition:  color .10s linear;			
+            }
+        </style>
+        <script>
+            $(function() {
+                $("#menu").menu();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container_12">
+            <div id="header">
+                <div class="grid_12">
+                    <a href="index.html"><img src="image/header.jpg" alt="" /></a>
+                </div>
+                <div id="nav-bar" class="grid_12">
+                    <nav class="main-nav" id="main-nav">
+                        <a href="index.html" class="home link">
+                            <span class="icon-home" aria-hidden="true"></span>首頁
+                        </a>
+                        <a href="introduce.html" class="forums link">
+                            <span class="icon-star" aria-hidden="true"></span>認識學程
+                        </a>
+                        <a href="member_teacher.html" class="snippets link">
+                            <span class="icon-user" aria-hidden="true"></span>成員
+                        </a>
+                        <a href="course.html" class="gallery link">
+                            <span class="icon-book" aria-hidden="true"></span>課程
+                        </a>
+                        <a href="recruit.html" class="videos link">
+                            <span class="icon-th-list" aria-hidden="true"></span>招生訊息
+                        </a>
+                        <a href="activities.html" class="demos link">
+                            <span class="icon-camera" aria-hidden="true"></span>活動照片
+                        </a>
+                        <a href="masterpiece/masterpiece.html" class="lodge link">
+                            <span class="icon-picture" aria-hidden="true"></span>學生作品
+                        </a>
+                        <a href="faq_apply.html" class="lodge link">
+                            <span class="icon-question-sign" aria-hidden="true"></span>常見問題
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="grid_4">
+                    <div class="outside">
+                        <div class="photo">
+                            <img src="image/member1shadowr.jpg">
+                        </div>
+                        <div class="content">
+                            <p>美國明尼蘇達大學教育心理學博士</p>
+                            <p>‧教育心理研究 <br> ‧創造力研究 <br>‧多元智慧</p>
+                            <p>jjwu@saec.edu.tw<br>研究室電話：分機67753</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <div class="outside">
+                        <div class="photo">
+                            <img src="image/member1shadowr.jpg">
+                        </div>
+                        <div class="content">
+                            <p>美國德州奧斯汀大學廣告研究所碩士</p>
+                            <p>‧廣告設計 <br> ‧廣告設計 <br>‧電腦繪圖</p>
+                            <p>ygwu@nccu.edu.tw<br>研究室電話：分機88026</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="grid_4">
+                    <div class="outside">
+                        <div class="photo">
+                            <img src="image/member1shadowr.jpg">
+                        </div>
+                        <div class="content">
+                            <p>美國哥倫比亞大學教育傳播博士</p>
+                            <p>‧網路傳播 <br> ‧網路媒體 <br>‧傳播與哲學</p>
+                            <p>smwu@nccu.edu.tw<br>研究室電話：分機67219</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <div class="outside">
+                        <div class="photo">
+                            <img src="image/member1shadowr.jpg">
+                        </div>
+                        <div class="content">
+                            <p>美國明尼蘇達大學教育心理學博士</p>
+                            <p>‧教育心理研究 <br> ‧創造力研究 <br>‧多元智慧</p>
+                            <p>jjwu@saec.edu.tw<br>研究室電話：分機67753</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid_4">
+                    <div class="outside">
+                        <div class="photo">
+                            <img src="image/member1shadowr.jpg">
+                        </div>
+                        <div class="content">
+                            <p>美國德州奧斯汀大學廣告研究所碩士</p>
+                            <p>‧廣告設計 <br> ‧廣告設計 <br>‧電腦繪圖</p>
+                            <p>ygwu@nccu.edu.tw<br>研究室電話：分機88026</p>
+                        </div>
+                    </div>                    
+                </div>
+                <div class="grid_4">
+                    <div class="outside">
+                        <div class="photo">
+                            <img src="image/member1shadowr.jpg">
+                        </div>
+                        <div class="content">
+                            <p>美國哥倫比亞大學教育傳播博士</p>
+                            <p>‧網路傳播 <br> ‧網路媒體 <br>‧傳播與哲學</p>
+                            <p>smwu@nccu.edu.tw<br>研究室電話：分機67219</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu_side">
+                <ul id="menu">
+                    <li><a href="member_teacher.html">教師</a></li>
+                    <li><a href="member_assistant.html">助教</a></li>
+                    <li>
+                        <a>學生</a>
+                        <ul>
+                            <li><a href="member_student100.html">第一屆</a></li>
+                            <li><a href="member_student101.html">第二屆</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <div class="grid_12">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

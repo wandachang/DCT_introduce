@@ -1,0 +1,141 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!--jquery-->
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link href="css/jquery-ui.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <!-- <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--other-->
+        <!-- <link href="css/animate-custom.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/960.css" />
+        <link href="css/nav_css.css" rel="stylesheet">
+
+        <style>
+            body{
+                font-family: '微軟正黑體';
+                background-image: url("image/wavegrid.png");
+            }
+            #menu_side{
+                position: fixed;
+                top: 200px;
+                left: 0px;
+                width: 100px;
+            }
+            ul{
+                width: 100px;
+            }
+        </style>
+
+        <script>
+            $(function() {
+                var icons = {
+                    header: "ui-icon-circle-arrow-e",
+                    activeHeader: "ui-icon-circle-arrow-s"
+                };
+                $("#accordion").accordion({
+                    icons: icons,
+                    collapsible: true,
+                    heightStyle: "content"
+                });
+            });
+            $(function() {
+                $("#menu").menu();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container_12">
+            <div id="header">
+                <div class="grid_12">
+                    <a href="index.html"><img src="image/header.jpg" alt="" /></a>
+                </div>
+                <div id="nav-bar" class="grid_12">
+                    <nav class="main-nav" id="main-nav">
+                        <a href="index.html" class="home link">
+                            <span class="icon-home" aria-hidden="true"></span>首頁
+                        </a>
+                        <a href="introduce.html" class="forums link">
+                            <span class="icon-star" aria-hidden="true"></span>認識學程
+                        </a>
+                        <a href="member_teacher.html" class="snippets link">
+                            <span class="icon-user" aria-hidden="true"></span>成員
+                        </a>
+                        <a href="course.html" class="gallery link">
+                            <span class="icon-book" aria-hidden="true"></span>課程
+                        </a>
+                        <a href="recruit.html" class="videos link">
+                            <span class="icon-th-list" aria-hidden="true"></span>招生訊息
+                        </a>
+                        <a href="activities.html" class="demos link">
+                            <span class="icon-camera" aria-hidden="true"></span>活動照片
+                        </a>
+                        <a href="masterpiece/masterpiece.html" class="lodge link">
+                            <span class="icon-picture" aria-hidden="true"></span>學生作品
+                        </a>
+                        <a href="faq_apply.html" class="lodge link">
+                            <span class="icon-question-sign" aria-hidden="true"></span>常見問題
+                        </a>
+                    </nav>
+                </div>
+            </div>
+            
+            <div id="content">
+                <div class="grid_12">
+                    <div id="accordion">
+                        <h3>學程課表上的排課我可以自己調整嗎？例如課表上二上的課在三年級選修？</h3>
+                        <div>
+                            <p>課表上的開課年級，只是建議同學可能的修課地圖。學程沒有規定修課的年級，也沒有擋修的規定。同學可以自己調整修課的年級。例如學程大二的課程，同學也可以在大三時再選修。當然，部分課程間有先後的關係，為了協助同學修課，學程設有學術導師，提供同學修課上的諮詢與輔導。  </p>
+                        </div>
+
+                        <h3>學程課表上的專案實作I與專案實作II，分別開在大三下與大四上，我可以先修讀專案實作II，再修讀專案實作I嗎？</h3>
+                        <div>
+                            <p>學程規劃的專案實作是一學年的課程，主要是與專案實作的指導老師學習，希望同學可以整合學程所學，完成一個實作專案。因此，同學可以自己調整修課的年級與學期，也可以先修讀專案實作II，再修讀專案實作I。</p>
+                        </div>
+
+                        <h3>是否要修滿學分學校才授予學位? </h3>
+                        <p>經核可修習本學程之學生，於畢業時，已修畢原學系規定應畢業之科目學分，同時於修業期限內修畢本學程規定之科目且成績及格，並符合本校「學生修讀雙主修輔系辦法」規定，由本學程委員會審查通過後，授予「理學學士(Bachelor of Science, B.S.)」學位。 </p>
+
+                        <h3>如果無法修完學程規定的學分，會有什麼結果呢？ </h3>
+                        <p>學程還是希望同學可以修讀到學程的學位。但若同學畢業前，沒有修足學程的學分，還是可以申請放棄雙主修，只是畢業證書上就沒有加註學程的學位名稱。 </p>
+
+                        <h3>學程的選課方法也是和一般選課方式相同嗎? </h3>
+                        <p>學程的選課方式與政大系所之選課方法及方式相同。 </p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="menu_side">
+                <ul id="menu">
+                    <li><a href="faq_apply.html">申請相關</a></li>
+                    <li><a href="faq_course.html">課程相關</a></li>
+                    <li><a href="faq_other.html">其他</a></li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <div class="grid_12">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

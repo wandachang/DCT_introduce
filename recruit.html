@@ -1,0 +1,228 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!--jquery-->
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link href="css/jquery-ui.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <!-- <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--other-->
+        <!-- <link href="css/animate-custom.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/960.css" />
+        <link href="css/nav_css.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Quicksand:300,400' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Lato:400,300' rel='stylesheet' type='text/css'>
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
+
+        <style>
+            body{
+                font-family: '微軟正黑體';
+                background-image: url("image/wavegrid.png");
+                /*background-color: black;*/
+            }
+
+            .bubble {
+                width: 100%;
+                padding: .5em 1em;
+                line-height: 1.4em;
+                padding: 20px;
+                background-color: #ecf0f1;
+                position: relative;
+                -webkit-border-radius: 8px;
+                text-align: left;
+                display: inline-block; 
+            }
+
+
+            .bubble-container {
+                width: 80%;
+                display: block;
+                position: relative;
+                padding-left: 20px;
+                vertical-align: top;
+                display: inline-block; 
+            }
+
+            .arrow {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 12px;
+                bottom: 25%;
+                height: 0;
+                width: 0;
+                border-top: 20px solid transparent;
+                border-bottom: 20px solid transparent;
+                border-right: 20px solid #ecf0f1; }
+
+            .timeline {
+                width: 760px;
+                display: block;
+                margin: auto;
+                background-color: #dde1e2;
+                padding-bottom: 2em;
+                -webkit-box-shadow: #bdc3c7 0 5px 5px;
+                -webkit-border-bottom-left-radius: 8px;
+                -webkit-border-bottom-right-radius: 8px; 
+            }
+
+            .timeline li {
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container_12">
+            <div id="header">
+                <div class="grid_12">
+                    <a href="index.html"><img src="image/header.jpg" alt="" /></a>
+                </div>
+                <div id="nav-bar" class="grid_12">
+                    <nav class="main-nav" id="main-nav">
+                        <a href="index.html" class="home link">
+                            <span class="icon-home" aria-hidden="true"></span>首頁
+                        </a>
+                        <a href="introduce.html" class="forums link">
+                            <span class="icon-star" aria-hidden="true"></span>認識學程
+                        </a>
+                        <a href="member_teacher.html" class="snippets link">
+                            <span class="icon-user" aria-hidden="true"></span>成員
+                        </a>
+                        <a href="course.html" class="gallery link">
+                            <span class="icon-book" aria-hidden="true"></span>課程
+                        </a>
+                        <a href="recruit.html" class="videos link">
+                            <span class="icon-th-list" aria-hidden="true"></span>招生訊息
+                        </a>
+                        <a href="activities.html" class="demos link">
+                            <span class="icon-camera" aria-hidden="true"></span>活動照片
+                        </a>
+                        <a href="masterpiece/masterpiece.html" class="lodge link">
+                            <span class="icon-picture" aria-hidden="true"></span>學生作品
+                        </a>
+                        <a href="faq_apply.html" class="lodge link">
+                            <span class="icon-question-sign" aria-hidden="true"></span>常見問題
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="grid_12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="title">
+
+                                <h2>招生名額</h2>
+                            </div>
+                            <div class="bubble-container">
+                                <div class="bubble">
+                                    <p>102學年度60名</p>
+                                </div>
+
+                                <div class="arrow"></div>
+                            </div>
+                        </li><br>
+                        <li>
+                            <div class="title">
+
+                                <h2>申請資格</h2>
+                            </div>
+                            <div class="bubble-container">
+                                <div class="bubble">
+                                    <p>本校符合雙主修申請之同學（本校學生修讀雙主修、輔系辦法請參考連結檔案）</p>
+                                </div>
+                                <div class="arrow"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">
+
+                                <h2>申請時間</h2>
+                            </div>
+                            <div class="bubble-container">
+                                <div class="bubble">
+                                    <p>申請雙主修上網登錄及列印時間為 102 年 5 月 17 日(五)上午 9 時至 5 月 22 日(三)下午 5 時，逾時系統關閉後，將無法登錄，亦無法列印，請特別注意時間。</p>
+                                </div>
+                                <div class="arrow"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">
+
+                                <h2>繳交資料</h2>
+                            </div>
+                            <div class="bubble-container">
+                                <div class="bubble">
+                                    <p>
+                                        採申請制、必要時得進行面試。申請所需檢附資料如下：
+                                    </p>
+                                    <ol>
+                                        <li>申請表</li>
+                                        <li>歷年成績單</li>
+                                        <li>其他有利申請之資料（修讀動機、個人特長、社團經驗或作品）並請儘量以書面繳交</li>                                              
+                                    </ol>
+                                    <p>※ 實際所需資料，仍以學校公告為準。</p>
+                                </div>
+
+                                <div class="arrow"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="title">
+
+                                <h2>收費規定</h2>
+                            </div>
+                            <div class="bubble-container">
+                                <div class="bubble">               
+                                    <p>數位內容與科技第二專長學士學位學程為跨領域、跨系所合作的學程，因應學生來自本校不同系所，故本學程將視課程性質採取獨立開班及部分合班方式開課。所以擬依擴大輔系方式，選修本學程課程須另繳學分費，由校方寄發「學分繳費三聯單」至各系辦公室，同學須分別於上學期（約在11月）及下學期（約在3-4月間）憑繳費單或逕自前往本校總務處出納組繳費。一學分為1133元。</p>
+                                </div>
+
+                                <div class="arrow"></div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="title">
+
+                                <h2>備註</h2>
+                            </div>
+                            <div class="bubble-container">
+                                <div class="bubble">
+                                    <p>其餘申請時所需相關資料請洽資科系或參考 http://dct.cs.nccu.edu.tw/</p>
+                                </div>
+
+                                <div class="arrow"></div>
+                            </div>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="grid_12">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

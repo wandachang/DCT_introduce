@@ -1,0 +1,238 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!--jquery-->
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link href="css/jquery-ui.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <!-- <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--other-->
+        <!-- <link href="css/animate-custom.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/960.css" />
+        <link href="css/nav_css.css" rel="stylesheet">
+
+        <style>
+            body{
+                font-family: '微軟正黑體';
+                background-image: url("image/wavegrid.png");
+            }
+            header{
+                margin: 10px;
+            }
+            p{
+                text-align: center;
+            }
+            table{
+                background-color: white;
+                border-radius:10px;
+            }
+            #menu_side{
+                position: fixed;
+                top: 230px;
+                left: 10px;
+                width: auto;
+             }
+            #coursetable{
+                background:url("image/emozionale_bg.png") no-repeat center bottom;
+                margin-bottom:28px; 
+                border-radius:0; 
+                padding: 0; 
+                position:relative; 
+            }
+/*        .bubble {
+              width: 100%;
+              padding: .5em 1em;
+              line-height: 1.4em;
+              padding: 20px;
+              background-color: #ecf0f1;
+              position: relative;
+              -webkit-border-radius: 8px;
+              text-align: left;
+              display: inline-block; 
+        }
+
+
+        .bubble-container {
+          width: 75%;
+          display: block;
+          position: relative;
+          padding-left: 20px;
+          vertical-align: top;
+          display: inline-block; 
+        }
+    
+        .arrow {
+          content: '';
+          display: block;
+          position: absolute;
+          left: 12px;
+          bottom: 25%;
+          height: 0;
+          width: 0;
+          border-top: 20px solid transparent;
+          border-bottom: 20px solid transparent;
+          border-right: 20px solid #ecf0f1; }
+
+        #content {
+          width: 760px;
+          display: block;
+          margin: auto;
+          background-color: #dde1e2;
+          padding-bottom: 2em;
+          -webkit-box-shadow: #bdc3c7 0 5px 5px;
+          -webkit-border-bottom-left-radius: 8px;
+          -webkit-border-bottom-right-radius: 8px; 
+        }*/
+        #coursetable h3{
+            padding: 10px;
+            border-bottom: 1px dotted; 
+            border-left:  1px dotted;
+        }
+        #coursetable h4{
+            font-size: 17px;
+        }
+        </style>
+        <script>
+            $(function() {
+                $("#menu").menu();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container_12">
+            <div id="header">
+                <div class="grid_12">
+                    <a href="index.html"><img src="image/header.jpg" alt="" /></a>
+                </div>
+                <div id="nav-bar" class="grid_12">
+                    <nav class="main-nav" id="main-nav">
+                        <a href="index.html" class="home link">
+                            <span class="icon-home" aria-hidden="true"></span>首頁
+                        </a>
+                        <a href="introduce.html" class="forums link">
+                            <span class="icon-star" aria-hidden="true"></span>認識學程
+                        </a>
+                        <a href="member_teacher.html" class="snippets link">
+                            <span class="icon-user" aria-hidden="true"></span>成員
+                        </a>
+                        <a href="course.html" class="gallery link">
+                            <span class="icon-book" aria-hidden="true"></span>課程
+                        </a>
+                        <a href="recruit.html" class="videos link">
+                            <span class="icon-th-list" aria-hidden="true"></span>招生訊息
+                        </a>
+                        <a href="activities.html" class="demos link">
+                            <span class="icon-camera" aria-hidden="true"></span>活動照片
+                        </a>
+                        <a href="masterpiece/masterpiece.html" class="lodge link">
+                            <span class="icon-picture" aria-hidden="true"></span>學生作品
+                        </a>
+                        <a href="faq_apply.html" class="lodge link">
+                            <span class="icon-question-sign" aria-hidden="true"></span>常見問題
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+ <!--            <div id="content">
+            <li>
+                <div class="subtitle">
+
+                    <h2 style="font-size:20px">基礎群選-內容與設計</h2>
+                </div><br>
+                <div class="bubble-container">
+                    <div class="bubble">
+                        <p>至少 18 學分，資訊設計與資訊科技類課程至少各需選修 6 學分</p>
+                    </div>
+                    
+                    <div class="arrow"></div>
+                </div>
+            </li>
+        </div> -->
+
+                <div class="grid_12" id="coursetable">
+                    <h3>基礎群選-內容與設計</h3>
+                    <h4>至少 18 學分，資訊設計與資訊科技類課程至少各需選修 6 學分</h4>
+                    <br>
+                    <table>
+                        <tr>
+                            <th style="width: 200px;">課名</th>
+                            <th style="width: 100px;">開課年級</th>
+                            <th style="width: 600px;">課程說明</th>
+                        </tr>
+                        <tr>
+                            <td><p>數位敘事</p></td>
+                            <td><p>二上</p></td>
+                            <td><p>
+                                    本課程探討數位媒介內在屬性如何形塑敘事與影響體驗。透過探討如何「說故事」，培養學生「說故事」的基本能力，進而瞭解結合數位科技後，故事如何可以更豐富、多元與互動。</p>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td><p>基礎動畫設計</p></td>
+                            <td><p>二上</p></td>
+                            <td>透過多媒體動畫實現創意，培養製作遊戲場景的能力，讓想像世界更具特色。將使用Photoshop處3D Max的貼圖設計，並逐步帶領學生製作3D模型，並學習將檔案轉換成為3D遊戲引擎所需的數位資料。</td>
+                        </tr>
+                        <tr>
+                            <td><p>新媒體作品賞析</p></td>
+                            <td><p>三上</p></td>
+                            <td><p>介紹著名新媒體作品，包括藝術、世界級新媒體藝術競賽與展覽。作品類型包括：錄像藝術，動態雕塑，互動裝置，行動裝置，網路藝術等。並介紹開創藝術家的背景生平、藝術脈絡、行動、思考與對社會的影響。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>資訊互動與設計基礎</p></td>
+                            <td><p>三上</p></td>
+                            <td><p>本課程主要介紹資訊設計的概念、原理、與表達策略，其次探討互動設計之人、境、物的互動關係，最後學生得以團隊合作方式嘗試將所學應用到新媒介，特別針對行動裝置的應用、服務與未來發展，開發創新產品。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>遊戲企畫與設計</p></td>
+                            <td><p>三上</p></td>
+                            <td><p>介紹目前比較普遍的遊戲類型（如RPG，第一人稱，即時策略，解謎，賽車，體育，休閒等），包括市場，玩家，著名的遊戲名稱，設計的重點等，以專案的方式，帶領學生理解在遊戲設計與企畫的流程與所需技能。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>展示科技案例分析</p></td>
+                            <td><p>三下</p></td>
+                            <td><p>介紹將新的技術(硬體，軟體，系統等)運用在展示上的案例分析，包括技術特色，效果，設計採用方式，技術的長處與短處，價格，維修，提供者等等。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>互動裝置設計</p></td>
+                            <td><p>四上</p></td>
+                            <td><p>焦點為互動藝術的設計製作流程，包含概念企劃設計、裝置造型設計、程式設計與電子電路設計。為提高學生的興趣與業界的契合度，也在課程中教導Wii與iPhone等產品的開發，並以實做教導學生互動藝術的製作。</p></td>
+                        </tr>
+
+                    </table>
+                </div>
+            </div>
+            
+            <div id="menu_side">
+                <ul id="menu">
+                    <li><a href="course.html">核心必修</a></li>
+                    <li><a href="course_2.html">基礎群修-內容與設計</a></li>
+                    <li><a href="course_3.html">基礎群選-科技</a></li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <div class="grid_12">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

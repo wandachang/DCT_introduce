@@ -1,0 +1,179 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <!--jquery-->
+        <script src="js/jquery-1.9.1.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <link href="css/jquery-ui.css" rel="stylesheet">
+
+        <!--bootstrap-->
+        <!-- <link href="bootstrap/css/bootstrap-responsive.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <!-- <link href="bootstrap/css/bootstrap.css" rel="stylesheet"> -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+
+        <!--other-->
+        <!-- <link href="css/animate-custom.css" rel="stylesheet"> -->
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/reset.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/text.css" />
+        <link rel="stylesheet" type="text/css" media="all" href="960_min/960.css" />
+        <link href="css/nav_css.css" rel="stylesheet">
+
+        <style>
+            body{
+                font-family: '微軟正黑體';
+                background-image: url("image/wavegrid.png");
+            }
+            header{
+                margin: 10px;
+            }
+            p{
+                text-align: center;
+            }
+            table{
+                background-color: white;
+                border-radius:10px;
+            }
+            #menu_side{
+                position: fixed;
+                top: 230px;
+                left: 10px;
+                width: auto;
+            }
+            #coursetable{
+                background:url("image/emozionale_bg.png") no-repeat center bottom;
+                margin-bottom:20px; 
+                border-radius:0; 
+                padding: 0; 
+                position:relative; 
+            }
+            #coursetable h3{
+                padding: 10px;
+                border-bottom: 1px dotted; 
+                border-left:  1px dotted;
+            }
+            #coursetable h4{
+                font-size: 17px;
+            }           
+        </style>
+        <script>
+            $(function() {
+                $("#menu").menu();
+            });
+        </script>
+    </head>
+    <body>
+        <div class="container_12">
+            <div id="header">
+                <div class="grid_12">
+                    <a href="index.html"><img src="image/header.jpg" alt="" /></a>
+                </div>
+                <div id="nav-bar" class="grid_12">
+                    <nav class="main-nav" id="main-nav">
+                        <a href="index.html" class="home link">
+                            <span class="icon-home" aria-hidden="true"></span>首頁
+                        </a>
+                        <a href="introduce.html" class="forums link">
+                            <span class="icon-star" aria-hidden="true"></span>認識學程
+                        </a>
+                        <a href="member_teacher.html" class="snippets link">
+                            <span class="icon-user" aria-hidden="true"></span>成員
+                        </a>
+                        <a href="course.html" class="gallery link">
+                            <span class="icon-book" aria-hidden="true"></span>課程
+                        </a>
+                        <a href="recruit.html" class="videos link">
+                            <span class="icon-th-list" aria-hidden="true"></span>招生訊息
+                        </a>
+                        <a href="activities.html" class="demos link">
+                            <span class="icon-camera" aria-hidden="true"></span>活動照片
+                        </a>
+                        <a href="masterpiece/masterpiece.html" class="lodge link">
+                            <span class="icon-picture" aria-hidden="true"></span>學生作品
+                        </a>
+                        <a href="faq_apply.html" class="lodge link">
+                            <span class="icon-question-sign" aria-hidden="true"></span>常見問題
+                        </a>
+                    </nav>
+                </div>
+            </div>
+
+            <div id="content">
+                <div class="grid_12" id="coursetable">
+                    <h3>基礎群選-科技</h3>
+                    <h4>至少 18 學分，資訊設計與資訊科技類課程至少各需選修 6 學分</h4>
+                    <br>
+                    <table>
+                        <tr>
+                            <th style="width: 200px;">課名</th>
+                            <th style="width: 100px;">開課年級</th>
+                            <th style="width: 600px;">課程說明</th>
+
+                        </tr>
+                        <tr>
+                            <td><p>網路與通訊科技應用</p></td>
+                            <td><p>二上</p></td>
+                            <td><p>
+                                    介紹網路協定的基本概念，與通訊科技的基本原理。課程中會從實務的介紹，到系統理論的解析，做深入淺出的探討。內容強調在基本知識介紹，並透過現今網路應用的探討，創新應用情境展示，帶到目前網路通訊的未來發展趨勢與願景。</p>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td><p>多媒體系統</p></td>
+                            <td><p>二上</p></td>
+                            <td>簡介設計建置多媒體系統之相關技術及需求。介紹多媒體資訊系統中文字、圖片、影像、聲音、音樂、錄影等內容的壓縮、儲存、標記、處理、檢索、管理及傳播等技術趨勢。理解多媒體內容系統的應用發展現況及未來方向。	</td>
+                        </tr>
+                        <tr>
+                            <td><p>進階程式設計</p></td>
+                            <td><p>三上</p></td>
+                            <td><p>課程內容包括常見的資料結構、演算法，並且介紹簡易演算法之分析方法（時間複雜度、空間複雜度），帶領學生理解不同演算法和資料結果之原理。學生可用熟悉的程式語言（如：C/C++、Java、Python）完成課程相關之作業。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>資料庫應用</p></td>
+                            <td><p>三上</p></td>
+                            <td><p>本課程主要在介紹資料庫系統的基本概念與資料庫設計的方法，讓同學了解資料需求分析在資料庫應用系統開發時的重要性，並藉著資料庫的設計與資料庫系統的操作，體驗資料庫的應用開發。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>Web程式設計 / A</p></td>
+                            <td><p>三上</p></td>
+                            <td><p>介紹WWW的基本運作原理與如何以其為平台開發應用程式，包含HTML/CSS靜態網頁製作、XML簡介、網頁物件模型（DOM)、 JavaScript程式設計與伺服端程式設計等。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>行動平台應用程式開發</p></td>
+                            <td><p>三下</p></td>
+                            <td><p>針對行動平台（如iPhone/Android）的特性，介紹其應用程式開發的基礎概念，包括開發 工具、介面設計、網路與資料庫、硬體控制等主題，並藉由程式習作與期末專案實作，培養學生設計與開發行動平台應用程式的能力。</p></td>
+                        </tr>
+                        <tr>
+                            <td><p>XML入門</p></td>
+                            <td><p>四上</p></td>
+                            <td><p>本課程將涵蓋社群網路之相關議題，包括理論分析、技術介紹、社群建立。課程將採小組討論方式進行，學生利用社群網路工具分享想法及相關資訊，並以專案方式，帶領學生進行 Web 2.0網路應用之創新與開發。</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div id="menu_side">
+                <ul id="menu">
+                    <li><a href="course.html">核心必修</a></li>
+                    <li><a href="course_2.html">基礎群修-內容與設計</a></li>
+                    <li><a href="course_3.html">基礎群選-科技</a></li>
+                </ul>
+            </div>
+
+            <div id="footer">
+                <div class="grid_12">
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
